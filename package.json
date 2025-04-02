@@ -3,11 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://always-r0gu3.github.io/Cryptify/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-radio-group": "^1.2.2",
@@ -42,6 +45,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.5.1",
     "tailwindcss": "^4.0.13",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "gh-pages": "^6.1.1"
   }
 }
