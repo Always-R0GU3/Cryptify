@@ -119,7 +119,7 @@ function Encrypt() {
       }
 
       // Send the form data to the backend
-      const response = await fetch("http://192.168.164.215:5000/uploader/", {
+      const response = await fetch("https://5000-cs-9e739aa8-3f03-46bb-b62b-c83686e1a010.cs-asia-southeast1-yelo.cloudshell.dev/uploader/", {
         method: "POST",
         body: formData,
       });
@@ -151,7 +151,7 @@ function Encrypt() {
   const handleFileDownload = () => {
     if (encryptedFile) {
       window.open(
-        `http://192.168.164.215:5000/download/${encryptedFile}`,
+        `https://5000-cs-9e739aa8-3f03-46bb-b62b-c83686e1a010.cs-asia-southeast1-yelo.cloudshell.dev/download/${encryptedFile}`,
         "_self"
       );
     }
@@ -160,7 +160,7 @@ function Encrypt() {
   const handleHexFileDownload = () => {
     if (encryptedHexFile) {
       window.open(
-        `http://192.168.164.215:5000/download/${encryptedHexFile}`,
+        `https://5000-cs-9e739aa8-3f03-46bb-b62b-c83686e1a010.cs-asia-southeast1-yelo.cloudshell.dev/download/${encryptedHexFile}`,
         "_self"
       );
     }
